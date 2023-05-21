@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="controles.js"></script>
+</head>
+<body>
+    <form method="post" action="choix.php" onsubmit="return verif()">
+
+        <fieldset>
+            <h1>
+            Choix d'un exercice
+        </h1>
+        <table>
+            <tr>
+                <td colspan="2" > <label for="lang"> Choisir un langage de programation </label> </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li> <input type="radio" id="r1" value='html' name="lang"> html</li>
+                        <li> <input type="radio" id="r2" value='css' name="lang"> css</li>
+                        <li> <input type="radio" id="r3" value='javascript' name="lang"> javascript</li>
+                        <li> <input type="radio" id="r4" value="php" name="lang"> php</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ex">Choisir un exercice : </label></td>
+                <td>
+                    <select name="ex" id="ex">
+                        <option value="" disabled selected>choisir un exercice</option>
+                        <option value="ex1" >ex1</option>
+                        <option value="ex2" >ex2</option>
+                        <option value="ex3" >ex3</option>
+                        <option value="ex4" >ex4</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <input type="submit" value="Afficher">
+    <input type="reset" value="Annuler">
+</form>
+    
+</body>
+</html>
